@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useCallback } from "react";
 
 interface VideoFeedProps {
     onVideoReady: (video: HTMLVideoElement, canvas: HTMLCanvasElement) => void;
-    shouldStopCamera: boolean; // <-- НОВИЙ PROP
+    shouldStopCamera: boolean;
 }
 
 const VideoFeed: React.FC<VideoFeedProps> = ({ onVideoReady, shouldStopCamera }) => {
